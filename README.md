@@ -38,28 +38,28 @@ One flask service running with different endpoints. One of the gets you the met 
 
 ## The Team:
 ### Espen Stokkereit:
-	Team Solum, working with the Omnia platform, governance and administration related tasks. Implementing solutions and policies for all of Omnia Classic. Setting restrictions etc. Producing subnets and so on.
-	
-	Main subject is Math! Phd. In maths with some courses in IT. Started this august! 
+Team Solum, working with the Omnia platform, governance and administration related tasks. Implementing solutions and policies for all of Omnia Classic. Setting restrictions etc. Producing subnets and so on.
+
+Main subject is Math! Phd. In maths with some courses in IT. Started this august! 
 	
 ### Jens Gåsemyr Magnus:
-	Background in visualization. Shellvis.  Does bouldering. Plays Among Us. 
+Background in visualization. Shellvis.  Does bouldering. Plays Among Us. 
 	
 ### Kjell Wilhelm Kongsvik:
-	Missing Shellvis… Last half year I've been doing some API in Go. Some security stuff there. Not using radix yet. In the team he's the expert in Radix. One::pac team - baking. 
+Missing Shellvis… Last half year I've been doing some API in Go. Some security stuff there. Not using radix yet. In the team he's the expert in Radix. One::pac team - baking. 
 	
 ### Tor Erik Rabben
-	POSO in Trondheim, well planning.
-	Working with wellplans as compared to REP we're doing drilled wells. Working with adjusting data and presenting data and running with rpesenting APIs for planned wells. .NET and c# all way, with an Angular client. 
-	Background as a mathematician and geophysicist. Worked almost 10 years as a geophysicist in Equinor. For close to 3 years I've been in SI. Tend to pick up the math problems in the team and mainly work with back-end stuff. Did numerics, so it's always been computers. 
+POSO in Trondheim, well planning.
+Working with wellplans as compared to REP we're doing drilled wells. Working with adjusting data and presenting data and running with rpesenting APIs for planned wells. .NET and c# all way, with an Angular client. 
+Background as a mathematician and geophysicist. Worked almost 10 years as a geophysicist in Equinor. For close to 3 years I've been in SI. Tend to pick up the math problems in the team and mainly work with back-end stuff. Did numerics, so it's always been computers. 
 	
 ### Dafferianto Trinugroho
-	Used to work in the Radix team but now it's in the SUMO team.
-	Work in SIS. Work with bringing FMU to SSDL. 
+Used to work in the Radix team but now it's in the SUMO team.
+Work in SIS. Work with bringing FMU to SSDL. 
 	
 ### Rafael Garcia
-	Working in the SUMO team, in SIS. Working with providing the API with python to allow the engineers and geophysics to use an easier programming language.
-	Also a graduate, started in August. 
+Working in the SUMO team, in SIS. Working with providing the API with python to allow the engineers and geophysics to use an easier programming language.
+Also a graduate, started in August. 
 Background: Master degree CS: Machine learning.
 
 (
