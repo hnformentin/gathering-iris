@@ -32,6 +32,9 @@ TSNE can be used to pick out interesting things from the data.
 ## Data requirements
 * User provided data should be a table with rows being timestamps and columns being measurements.
   ** If all the rows share timestamps we can just slice it there (?)
+  
+## MVP1
+One flask service running with different endpoints. One of the gets you the met data, one of them combines and also depends on the met one and takes user input.
 
 (
 # SI Gathering Challenge: Template
