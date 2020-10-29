@@ -7,8 +7,8 @@
 * Python ( Espen and Rafael )
 * Pandas
 * Matplotlib
-* Flask (backend)
-* D3 (frontend)
+* Flask (backend) (Kjell and Dafferianto)
+* D3 (frontend) (Jens and Daniel)
 
 ## Ideas
 We have a general collection and aggregation of weather data and then we try to take user data and fit it onto our collection of data and do mathemagics to try to find interesting connections for over 9000 usecases. 
