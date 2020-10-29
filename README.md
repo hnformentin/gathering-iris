@@ -3,7 +3,7 @@
 ## Data from the following API:
 * [api.met.no](https://api.met.no/)
 
-## Built on the following frameworks and languages:
+## Built on the following frameworks and languages (and who's responsible):
 * Python ( Espen and Rafael )
 * Pandas
 * Matplotlib
@@ -35,6 +35,11 @@ TSNE can be used to pick out interesting things from the data.
   
 ## MVP1
 One flask service running with different endpoints. One of the gets you the met data, one of them combines and also depends on the met one and takes user input.
+
+### Frontend:
+We need:
+* Location service: [geolocation API!](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
+* Line charts
 
 ## The Team:
 ### Espen Stokkereit:
