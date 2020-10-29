@@ -38,7 +38,7 @@ One flask service running with different endpoints. One of the gets you the met 
 
 ### Frontend:
 We need:
-* Location service
+* Location service: [geolocation API!](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
 * Line charts
 
 ## The Team:
