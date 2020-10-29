@@ -1,7 +1,7 @@
 # Ultimate Weathertron 3000
 
 ## Data from the following API:
-* [https://api.met.no/!](api.met.no)
+* [api.met.no](https://api.met.no/)
 
 ## Built on the following frameworks and languages:
 * Python
