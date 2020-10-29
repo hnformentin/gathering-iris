@@ -18,13 +18,13 @@ TSNE can be used to pick out interesting things from the data.
 
 ## The Workflow
 * Get data from the API
-  ** Accept some user data and load from our storage of the prepared metereological data.
-    *** We need to get met data for the time and position of the user data.
+  * Accept some user data and load from our storage of the prepared metereological data.
+    * We need to get met data for the time and position of the user data.
 * Process the data using Python and Pandas
-  ** Do we need caching?
+  * Do we need caching?
 * Send this data to a frontend via Flask
-  ** Are we going to allow data to be received from the user on the frontend?
-  ** We want to take our collection data and discover usecases. 
+  * Are we going to allow data to be received from the user on the frontend?
+  * We want to take our collection data and discover usecases. 
 * Visualize the data in the frontend
 
 ## Data requirements
