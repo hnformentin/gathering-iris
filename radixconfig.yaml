@@ -11,8 +11,8 @@ spec:
     - name: server
       src: "."
       ports:
-       - name: http
-         port: 5000
+        - name: http
+          port: 5000
       # publicPort: http
     - name: auth
       image: quay.io/pusher/oauth2_proxy:v4.1.0 # see https://pusher.github.io/oauth2_proxy/configuration
