@@ -43,6 +43,14 @@ One flask service running with different endpoints. One of the gets you the met 
 We need:
 * Location service: [geolocation API!](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
 * Line charts
+* A way to input user data and send to the backend.
+* Try to think about what data format to get back.
+* Think about user design.
+* Make graphs for temperature and energy usage.
+	How to visualize these.
+	The temp is a cont time series, while every trip is a dot in the same plot.
+	Add a "gadget" to visualize a set of timesequences. Data from the car. Data from temp. From Weather.
+	
 
 ## The Team:
 ### Espen Stokkereit:
