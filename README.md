@@ -1,5 +1,8 @@
 # Ultimate Weathertron 3000
 
+## Purpose
+Insert weather data and vizualise the correlation between the user data and weather data.
+
 ## Data from the following API:
 * [api.met.no](https://api.met.no/)
 
