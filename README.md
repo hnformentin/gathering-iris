@@ -2,11 +2,13 @@
 
 ## Data from the following API:
 * [https://api.met.no/!](api.met.no)
+
 ## Built on the following frameworks and languages:
 * Python
 * Pandas
 * Matplotlib
-* Flask
+* Flask (backend)
+* D3 (frontend)
 
 ## Ideas
 We have a general collection and aggregation of weather data and then we try to take user data and fit it onto our collection of data and do mathemagics to try to find interesting connections for over 9000 usecases. 
@@ -30,8 +32,6 @@ TSNE can be used to pick out interesting things from the data.
 ## Data requirements
 * User provided data should be a table with rows being timestamps and columns being measurements.
   ** If all the rows share timestamps we can just slice it there (?)
-*
-
 
 (
 # SI Gathering Challenge: Template
