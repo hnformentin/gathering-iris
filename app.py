@@ -37,7 +37,7 @@ def upload_user_data():
     data_frost.index = pd.to_datetime(data_frost.index)
     idx = data_ev.index
     data_combined = pd.concat([data_ev, data_frost]).sort_index().interpolate().reindex(idx)
-    data_combined.index = data_combined.index.map(lambda i: i.isoformat())
+    # data_combined.index = data_combined.index.map(lambda i: i.isoformat())
     return data_combined.to_json()
 
 
