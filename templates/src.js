@@ -36,6 +36,10 @@ function geoFindMe() {
 
 geoFindMe()
 
+function make_series(o) {
+    return Object.keys(o).sort().map(key => {date: key, value: o[key]})
+}
+
 const url = "/uploadUserData";
 const form = document.querySelector('#userFileForm');
 
@@ -55,7 +59,14 @@ form.addEventListener('submit', e => {
 
     // log response
     xhr.onload = () => {
-        console.log(xhr.responseText);
+        j = JSON.parse(xhr.responseText);
+        for (let key in j) {
+            console.log(key);
+            console.log(j[key]);
+            timeseries = make_series(j[key]);
+            console.log(timeseries);
+            // add_plot(key, timeseries);
+        }
     };
 
     // create and send the reqeust
