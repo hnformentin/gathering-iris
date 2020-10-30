@@ -37,7 +37,7 @@ function geoFindMe() {
 geoFindMe()
 
 function make_series(o) {
-    return Object.keys(o).sort().map(key => {date: key, value: o[key]})
+    // return Object.keys(o).sort().map(key => {{date: key, value: o[key]}})
 }
 
 const url = "/uploadUserData";
@@ -72,6 +72,7 @@ form.addEventListener('submit', e => {
     // create and send the reqeust
     xhr.open('POST', url + "?" + "lat=" + lat.value + "&long=" + long.value);
     xhr.send(formData);
+    console.log(xhr);
 });
 
 data = [
