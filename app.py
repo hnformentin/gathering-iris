@@ -1,7 +1,13 @@
 import os
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 
-app = Flask("name-gathering")
+
+app = Flask("iris-gathering", static_url_path='')
+
+
+@app.route('/templates/<path:path>')
+def send_js(path):
+    return send_from_directory('templates', path)
 
 
 @app.route("/")
