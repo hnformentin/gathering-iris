@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import requests
 
+
 def _set_reference_time(time0, time1):
     return time0 + '/' + time1
 
@@ -41,10 +42,9 @@ class FrostDataRetriever:
         r = requests.get(endpoint, parameters, auth=(self.client_id, ''))
 
         if r.status_code > 203:
-            raise ConnectionError('Unable to retrieve data from FROST.')
+            raise ConnectionError(f'Unable to retrieve data from FROST: {r.status_code}.')
 
         return r.json()['data']
-
 
     def build_dataframe(self):
         elements = ['air_temperature', 'wind_speed']
@@ -57,14 +57,14 @@ class FrostDataRetriever:
             df[e] = df.apply(lambda row: row['observations'][0]['value'], axis=1)
             df = df.drop(['observations', 'sourceId'], axis=1)
             final_df = pd.concat([final_df, df], axis=1)
-            print(df)
 
         _, i = np.unique(final_df.columns, return_index=True)
         final_df = final_df.iloc[:, i]
 
-        print(final_df.head())
+        return final_df
 
 
 if __name__ == '__main__':
     data_retriever = FrostDataRetriever()
-    data_retriever.build_dataframe()
+    df = data_retriever.build_dataframe()
+    print(df)
