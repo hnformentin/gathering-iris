@@ -1,10 +1,8 @@
-var latitude  = 59.89552;
-var longitude = 10.62908;
+const lat = document.querySelector('#lat');
+const long = document.querySelector('#long');
 
 function geoFindMe() {
 
-    const lat = document.querySelector('#lat');
-    const long = document.querySelector('#long');
     const status = document.querySelector('#status');
     const mapLink = document.querySelector('#map-link');
 
@@ -12,6 +10,8 @@ function geoFindMe() {
     mapLink.textContent = '';
 
     function success(position) {
+        var latitude  = position.coords.latitude;
+        var longitude = position.coords.longitude;
         status.textContent = '';
         mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
         mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
@@ -59,7 +59,7 @@ form.addEventListener('submit', e => {
     };
 
     // create and send the reqeust
-    xhr.open('POST', url);
+    xhr.open('POST', url + "?" + "lat=" + lat.value + "&long=" + long.value);
     xhr.send(formData);
 });
 
