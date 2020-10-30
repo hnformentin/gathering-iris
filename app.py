@@ -27,11 +27,22 @@ def upload_user_data():
     print(request.form)
     print(request.files)
     csv_file = request.files.get("userData")
-    data = pd.read_csv(csv_file.stream)
-    data_retriever = fd.FrostDataRetriever()
-    df = data_retriever.build_dataframe()
-    # Magic math
-    return df.to_json()
+    data_ev = pd.read_csv(csv_file.stream, decimal=",", header=0, names=["Date", "Consumption", "Distance", "Time hh:mm", "Speed"], index_col=0, parse_dates=True)
+    data_ev['Duration'] = data_ev['Time hh:mm'].str.split(':').apply(lambda x: int(x[0]) * 60 + int(x[1]))
+    data_ev = data_ev.drop(columns=['Time hh:mm']).loc[(data_ev['Speed']>30) & (data_ev['Duration'] > 15)]
+
+    data_retriever = fd.FrostDataRetriever(
+        longitude=10.55,
+        latitude=63.42,
+        initial_time_stamp=data_ev.index.min().isoformat(),
+        final_time_stamp=data_ev.index.max().isoformat()
+    )
+    data_frost = data_retriever.build_dataframe()
+    data_frost.set_index('referenceTime', inplace=True)
+    data_frost.index = pd.to_datetime(data_frost.index)
+    idx = data_ev.index
+    data_combined = pd.concat([data_ev, data_frost]).sort_index().interpolate().reindex(idx)
+    return data_combined.to_json()
 
 
 if __name__ == "__main__":
