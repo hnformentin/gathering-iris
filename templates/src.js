@@ -101,7 +101,7 @@ function chart(key, timeseries) {
     //     .range([margin.left, width - margin.right])
 
     x = d3.scaleLinear()
-        .domain([0, d3.max(timeseries, t => t[0])]).nice()
+        .domain(d3.extent(timeseries, t => t[0])).nice()
         .range([width - margin.left, margin.right])
 
     y = d3.scaleLinear()
