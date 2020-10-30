@@ -10,26 +10,25 @@ function App() {
   return (
     <div className="App">
       <header className="Ultimate Weathertron 3000">
-      <link rel="stylesheet" href="https://eds-static.equinor.com/font/equinor-font.css" />
-      <link rel="stylesheet" href="https://eds-static.equinor.com/font/equinor-regular.css" />
-      <img src="https://eds-static.equinor.com/logo/equinor-logo-primary.svg#red" alt="Equinor" />
+        <link rel="stylesheet" href="https://eds-static.equinor.com/font/equinor-font.css" />
+        <link rel="stylesheet" href="https://eds-static.equinor.com/font/equinor-regular.css" />
+        <img src="https://eds-static.equinor.com/logo/equinor-logo-primary.svg#red" alt="Equinor" />
         <Icon name="info_circle" size={24} />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          The textfields should contain your geolocation. 
+          You can input another location (latitude, longitude) manually.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Ultimate Weathertron 3000
-        </a>
 
-
-        <Button variant="outlined" color="secondary">
-          Upload data
-        </Button>
+        <input type="text" id="lat" value="59.89552" />
+        <input type="text" id="long" value="10.62908" />
+        <p id="status"></p>
+        <a id="map-link" target="_blank"></a>
+        <form method="POST" id="userFileForm" enctype="multipart/form-data">
+          <input type="file" id="userFile" name="file" />
+          <Button type="submit" role="button">Upload File</Button>
+        </form>
+        <script src="d3.min.js" defer></script>
+        <script src="src.js" defer></script>
 
       </header>
     </div>
