@@ -4,17 +4,14 @@ import backend.frost_data_retriever as fd
 from flask import Flask, render_template, send_from_directory, request
 
 
-app = Flask("iris-gathering", static_url_path='')
-
-
-@app.route('/templates/<path:path>')
-def send_js(path):
-    return send_from_directory('templates', path)
+app = Flask("iris-gathering", static_url_path='',
+            static_folder='templates',
+            template_folder='templates')
 
 
 @app.route("/")
 def root():
-    return render_template("index.html")
+    return render_template("location.html")
 
 
 @app.route("/hello")
