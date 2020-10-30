@@ -39,6 +39,8 @@ TSNE can be used to pick out interesting things from the data.
 ## MVP1
 One flask service running with different endpoints. One of the gets you the met data, one of them combines and also depends on the met one and takes user input.
 
+![""](/jupyter/scatter_drive_duration.png?raw=true "Car consumption version Drive duration colored by Air Temperature")
+
 ### Frontend:
 We need:
 * Location service: [geolocation API!](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
