@@ -78,6 +78,10 @@ Working in the SUMO team, in SIS. Working with providing the API with python to 
 Also a graduate, started in August. 
 Background: Master degree CS: Machine learning.
 
+### Daniel Sander Isaksen
+Working in the REP-backend team (Omniators), in SIS. Stationed in Oslo. Working with data engineering to get data from SSDL to REP. Spends his 20% on a VR project with the Digital Center of Excellence. 
+Background as a Robotics and Machine Learning engineer. Started as a graduate in September. Loves CrossFit.
+
 (
 # SI Gathering Challenge: Template
 
